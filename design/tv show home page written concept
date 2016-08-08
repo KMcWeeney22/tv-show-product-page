@@ -1,0 +1,10 @@
+For my final project I am making a home page for a TV show (which TV show is still in progress). My plan is to create a visually appealing responsive website about a tv show using various APIs to provide a better user experience. I plan to use a feed reader API to provide the latest news as well as the twitter API to see what people are saying about the show. I also plan to use the Youtube API to show related videos that people might want to see. I also plan to add a photo carousel as well as a cast section with bio snippets and a sign up section for getting email updates about the show.
+
+
+List of third party libraries or modules I plan to use
+Jquery and jquery validate(validating the sign up form at the bottom of the page).
+Bootstrap
+Google feed API – implement feed reader with news about the tv show
+Twitter API – to show what people are tweeting about the tv show
+Youtube API – for possibly displaying related videos to the tv show
+Event listeners – I plan to have a login button attached to the Fixed Navbar and provide an on-click function to that, a show more/show less button attached to the bio section under the cast photos and another on-click function to the sign up button for receiving emails on news updates about the tv show
