@@ -1,0 +1,94 @@
+
+.wrapper{
+	margin: 0 auto;
+	max-width: 1321px;
+}
+/* header ------------- */
+header{
+	padding: 0;
+}
+#header-image{
+	padding: 0;
+}
+#header-image img{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+#top-nav {
+	height: 30px;
+	padding: 0;
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+#header-nav li{
+	display: block;
+	float: left;
+}
+/* end header*/
+
+
+/* jumbotron carousel ---- */
+.jumbotron {
+	width: 75%;
+	height: 400px;
+	border: 1px solid black;
+	margin-top: 50px;
+	z-index: 1;
+}
+
+/* end jumbotron */
+
+/* main content sections= about, related videos, various APIs */
+#main-content{
+	background-image: url("http://www.desktopimages.org/pictures/2013/1226/1/orig_156753.jpg");
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 100% 100%;
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+}
+
+#about{
+	color: white;
+	background-color: black;
+	border: 1px solid black;
+	height: 400px;
+	margin-top: 75px;
+	margin-left: 75px;
+	margin-right: 75px;
+}
+
+#related-videos{
+	margin-top: 75px;
+	border: 1px solid black;
+	height: 400px;
+	background-color: black;
+}
+
+/* footer ----------*/
+
+/* footer values to move it to bottom page. was getting stuck above jumbotron */
+.footer{
+	position: relative;
+  clear: both;
+  padding-top: 20px;
+	color: black;
+}
+
+/* end footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
