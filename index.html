@@ -1,5 +1,8 @@
 <!doctype html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
    	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -13,8 +16,13 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<!-- Jquery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<!-- Google feed API -->
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 	</head>
 	<body>
+		  <!--[if lt IE 8]>
+         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
 		<div class="wrapper">
 		
 				<!-- Photo used for header -->
@@ -45,7 +53,7 @@
 				</header><!-- end header -->
 				
 					<!-- jumbotron size 75% (8/12 of bootstrap grid). pushed left 2 to center jumbotron -->
-				<div class ="jumbotron col-xs-8 col-xs-push-2">
+				<div class ="jumbotron col-xs-10 col-xs-push-1" id="wd-carousel" style="padding-top: 11px; background-color: black;">
 					<div class="container-fluid" id="home">
 						<div id="walking-dead-carousel" class="carousel slide" data-ride="carousel">
     		      <!-- Indicators -->
@@ -56,71 +64,105 @@
     		        <li data-target="#walking-dead-carousel" data-slide-to="3"></li>
     		        <li data-target="#walking-dead-carousel" data-slide-to="4"></li>
     		      </ol>
-						</div>
 						
 						          <!-- Wrapper for slides -->
     		    <div class="carousel-inner" role="listbox">
     		 
     		      <div class="item active">
-    		        <img src="" alt="">
+    		        <img src="design/walking-dead1.jpg" alt="">
     		        <div class="carousel-caption">
     		          <h3></h3>
     		        </div>
     		      </div>
     		      <!-- picture 1 -->
     		      <div class="item">
-    		        <img src="" alt="">
+    		        <img src="design/walking-dead2.jpg" alt="">
     		        <div class="carousel-caption">
     		          <h3></h3>
     		        </div>
     		      </div>
     		      <!-- picture 2 -->
     		      <div class="item">
-    		        <img src="" alt="">
+    		        <img src="design/walking-dead3.jpg" alt="">
     		        <div class="carousel-caption">
     		          <h3></h3>
     		        </div>
     		      </div>
     		      <!-- picture 3 -->
     		      <div class="item">
-    		        <img src="" alt="">
+    		        <img src="design/walking-dead4.jpg" alt="">
     		        <div class="carousel-caption">
     		          <h3></h3>
     		        </div>
     		      </div>
     		      <!-- picture 4 -->
     		      <div class="item">
-    		        <img src="" alt="">
+    		        <img src="design/walking-dead5.jpg" alt="">
     		        <div class="carousel-caption">
     		          <h3></h3>
     		        </div>
     		      </div>
     		      
     		    </div>
-		
-						
+					<!-- Controls -->
+          	<a class="left carousel-control" href="#walking-dead-carousel" role="button" data-slide="prev">
+          	  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          	  <span class="sr-only">Previous</span>
+          	</a>
+          	<a class="right carousel-control" href="#walking-dead-carousel" role="button" data-slide="next">
+          	  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          	  <span class="sr-only">Next</span>
+          	</a>
+							
+						</div>
 					</div><!-- end carousel -->
 				</div><!--end jumbtron -->
 				<div class="container" id="main-content">
 					<div class="row" id="content1">
-						
-						<div class=" col-xs-8 col-xs-push-2 col-md-4 col-md-push-1" id="about">
+						<section class="col-xs-10 col-xs-push-1 col-md-1 col-md-push-1" id="about-header">
+							<p>
+								About
+							</p>
+						</section>
+						<section class="col-xs-10 col-xs-push-1 col-md-9 col-md-push-1" id="about">
 							<p>
 								The Walking Dead is an American horror drama television series developed by Frank Darabont, based on the comic book series of the same name by Robert Kirkman, Tony Moore, and Charlie Adlard. Andrew Lincoln plays the show's lead character, sheriff's deputy Rick Grimes,[3] who awakens from a coma discovering a world overrun by zombies, commonly referred to as "walkers".[4] Grimes reunites with his family and becomes the leader of a group he forms with other survivors. Together they struggle to survive and adapt in a post-apocalyptic world filled with walkers and opposing groups of survivors, who are often more dangerous than the walkers themselves.[5]
 							</p>
-						</div>
-						<div class="col-xs-8 col-xs-push-2 col-md-5 col-md-push-1" id="related-videos">
+						</section>
+					</div><!-- end content1 row -->
+					
+					<div class="row" id="content2">
+						<section class="col-xs-10 col-xs-push-1 col-md-10 col-md-push-1" id="related-videos">
 							
-						</div>
+						</section>
+					</div><!-- end content 2 row -->
+					
+					<div class="row" id="content3">
+						<section class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-1" id="google-feed-reader">
+							<!-- rss feed widget created from rssfeedwidget.com-- feed site for the walking dead = http://www.scifistream.com/news/the-walking-dead/feed/ --> 
+							<iframe src="http://us1.rssfeedwidget.com/getrss.php?time=1471484439132&amp;x=http%3A%2F%2Fwww.scifistream.com%2Fnews%2Fthe-walking-dead%2Ffeed%2F&amp;w=200&amp;h=500&amp;bc=333333&amp;bw=1&amp;bgc=transparent&amp;m=20&amp;it=true&amp;t=(default)&amp;tc=333333&amp;ts=15&amp;tb=transparent&amp;il=true&amp;lc=0000FF&amp;ls=14&amp;lb=false&amp;id=true&amp;dc=333333&amp;ds=14&amp;idt=true&amp;dtc=284F2D&amp;dts=12" id="rssOutput"></iframe>
+						</section>
+						<section class="col-xs-10 col-xs-push-1 col-md-5 col-md-push-1" id="twitter-api"></section>
 					</div>
 				
 				
-				
-				
+				<div id="subscribe">
+					<form class="form-inline">
+					  <div class="form-group">
+					    <label for="input-name">Name</label>
+					    <input type="text" class="form-control" id="input-name" placeholder="John Doe">
+					  </div>
+					  <div class="form-group">
+					    <label for="input-email" id="email-header">Email</label>
+					    <input type="email" class="form-control" id="input-email" placeholder="john.doe@example.com">
+					  </div>
+					  <button type="submit" class="btn btn-primary">Subscribe!</button>
+					</form>
+				</div>
 				
 				<footer class="footer">
 					<p>
-						Made by Kyle McWeeney in August 2016. Final Project in Intro to Javascript Course!
+						Made by Kyle McWeeney in August 2016. Final Project in Intro to Javascript Course! Some content used from <a href="https://en.wikipedia.org/wiki/The_Walking_Dead_(TV_series)">The Walking Dead Wiki Page</a>
 					</p>
 				</footer>
 				<!-- Latest compiled and minified JavaScript -->
