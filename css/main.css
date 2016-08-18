@@ -32,10 +32,15 @@ header{
 /* jumbotron carousel ---- */
 .jumbotron {
 	width: 75%;
-	height: 400px;
+	height: 450px;
 	border: 1px solid black;
 	margin-top: 50px;
 	z-index: 1;
+	background-color: black;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
 }
 
 /* end jumbotron */
@@ -50,22 +55,82 @@ header{
   min-width: 100%;
   background-size: cover;
 }
-
+#content1{
+	clear: both;
+}
+#about-header{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 100px;
+	border: 1px solid black;
+	height: 110px;
+	background-color: black;
+	color: white;
+	font-size: 25px;
+}
 #about{
 	color: white;
 	background-color: black;
 	border: 1px solid black;
-	height: 400px;
-	margin-top: 75px;
-	margin-right: 75px;
+	height: 110px;
 }
 
 #related-videos{
-	margin-top: 75px;
+	margin-top: 50px;
 	border: 1px solid black;
-	height: 400px;
+	height: 660px;
 	background-color: black;
+	overflow: scroll;
+	overflow-x: hidden;
+	list-style-type: none;
 }
+#related-videos li{
+	display: inline;
+}
+
+#related-videos iframe{
+	width: 480px;
+	height: 300px;
+	margin: 10px;
+	margin-top: 15px;
+}
+
+#content3{
+	margin-top: 50px;
+}
+#google-feed-reader{
+	height: 300px;
+	border: 1px solid black;
+	background-color: white;
+	padding: 0;
+}
+#rssOutput{
+	width: 548px;
+	height: 298px;
+}
+#twitter-api{
+	height: 300px;
+	border: 1px solid black;
+	background-color: white;
+}
+/* ------------------------------ */
+/* subscribe section above footer */
+#subscribe {
+	margin-left: 95px;
+	margin-top: 50px;
+}
+#input-name{
+	width: 300px;
+	margin-left: 25px;
+}
+#email-header{
+	margin-left: 25px;
+}
+#input-email{
+	width: 400px;
+	margin-left: 25px;
+}
+/* end subscribe section */
 
 /* footer ----------*/
 
