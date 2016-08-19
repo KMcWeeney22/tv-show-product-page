@@ -1,9 +1,7 @@
-var channelName = 'amc'; 
-
 $(document).ready(function(){
 	// detect the viewers screen size and change the viewport based on width
 	if (screen.width <= 480) {
- document.getElementById("viewport").setAttribute("content", "width=768; initial-scale=0.5");
+ document.getElementById("viewport").setAttribute("content", "width=480; initial-scale=0.5");
 }
 	if (screen.width <= 768) {
  document.getElementById("viewport").setAttribute("content", "width=768; initial-scale=0.5");
@@ -21,7 +19,7 @@ $(document).ready(function(){
 			$.get(
 			"https://www.googleapis.com/youtube/v3/playlistItems", {
 				part: 'snippet',
-				maxResults: 14, 
+				maxResults: 8, 
 				playlistId: 'PLC7EC9FB2E211A261',
 				key:'AIzaSyCgG-caHE-r6Q4Mh-XvB0H-ceZG1jZHnXI'},
 				function(data){
@@ -39,5 +37,22 @@ $(document).ready(function(){
 					});
 				}
 	);
-	
+		
+	$('#subscribe-btn').validate({
+        submitHandler: function(form) {
+            // If form is valid, submit it!
+            form.submit();
+        },
+			rules: {
+				"input-name":{
+					required: true,
+					number: false,
+					maxlength: 128
+				},
+				
+				"input-email": {
+					required: true,
+			}
+			}
+	});
 });
