@@ -1,3 +1,4 @@
+/* css changes made towards better layout for mobile devices */
 @media screen and (max-width: 768px){
 	body{
 		background-color: black;
@@ -81,7 +82,7 @@
 		color: white;
 	}
 }
-
+/* end media query */
 
 
 
@@ -90,6 +91,7 @@
 
 
 @media screen and (min-width: 768px){
+	/* center everyting in the middle of the page if on large screen devices */
 .wrapper{
 	margin: 0 auto;
 	max-width: 1321px;
@@ -129,7 +131,12 @@ header{
 	z-index: 1;
 	background-color: black;
 }
+/* removed margin so about section would be flush against the carousel */
+	#wd-carousel{
+		margin-bottom: 0;
+	}
 
+/* center the images in the middle of the carousel div */
 .carousel-inner > .item > img {
     margin: 0 auto;
 }
