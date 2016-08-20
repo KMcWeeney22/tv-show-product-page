@@ -67,7 +67,7 @@
 						
 						          <!-- Wrapper for slides -->
     		    <div class="carousel-inner" role="listbox">
-    		 			<!-- photo 0 -->
+    		 
     		      <div class="item active">
     		        <img src="design/walking-dead1.jpg" alt="">
     		        <div class="carousel-caption">
@@ -117,8 +117,6 @@
 						</div>
 					</div><!-- end carousel -->
 				</div><!--end jumbtron -->
-			
-				<!-- about section under jumbotron carousel -->
 				<div class="container" id="main-content">
 					<div class="row" id="content1">
 						<section class="col-xs-12 col-md-1 col-md-push-1" id="about-header">
@@ -133,41 +131,38 @@
 						</section>
 					</div><!-- end content1 row -->
 					
-					<!-- related videos using the youtube api by searching from a channels playlist -->
 					<div class="row" id="content2">
 						<section class="col-xs-12 col-md-10 col-md-push-1" id="related-videos">
 							
 						</section>
 					</div><!-- end content 2 row -->
 					
-					<!-- content 3 div row featuring rss feed widget and twitter search widget -->
 					<div class="row" id="content3">
 						<section class="col-xs-12 col-md-5 col-md-push-1" id="google-feed-reader">
 							<!-- rss feed widget created from rssfeedwidget.com-- feed site for the walking dead = http://www.scifistream.com/news/the-walking-dead/feed/ --> 
 							<iframe src="http://us1.rssfeedwidget.com/getrss.php?time=1471484439132&amp;x=http%3A%2F%2Fwww.scifistream.com%2Fnews%2Fthe-walking-dead%2Ffeed%2F&amp;w=200&amp;h=500&amp;bc=000000&amp;bw=0&amp;bgc=transparent&amp;m=20&amp;it=true&amp;t=(default)&amp;tc=FFFFFF&amp;ts=15&amp;tb=transparent&amp;il=true&amp;lc=24A0FF&amp;ls=14&amp;lb=false&amp;id=true&amp;dc=FFFFFF&amp;ds=14&amp;idt=true&amp;dtc=FFFFFF&amp;dts=12" id="rssOutput"></iframe>
 						</section>
 						
-						<!-- twitter data widget focusing on the hash tag #thewalkingdead -->
 						<section class="col-xs-12 col-md-5 col-md-push-1" id="twitter-api">
 							<a class="twitter-timeline"  href="https://twitter.com/hashtag/TheWalkingDead" data-widget-id="766335535459610624" data-chrome="noheader nofooter">#TheWalkingDead Tweets</a>
             	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 						</section>
 					</div>
 				
-				<!-- subscribe form. validate function in the main.js file when user hits the subsribe button -->
+				
 				<div id="subscribe">
 					<form class="form-inline">
 					  <div class="form-group">
 					    <label for="input-name">Name</label>
-					    <input type="text" class="form-control" id="input-name" placeholder="first last" required>
+					    <input type="text" class="form-control" id="input-name" placeholder="John Doe" required>
 					  </div>
 					  <div class="form-group">
 					    <label for="input-email" id="email-header">Email</label>
-					    <input type="email" class="form-control" id="input-email" placeholder="first.last@example.com" required>
+					    <input type="email" class="form-control" id="input-email" placeholder="john.doe@example.com" required>
 					  </div>
 					  <button type="submit" class="btn btn-primary" id="subscribe-btn">Subscribe!</button>
 					</form>
-				</div><!-- end subscribe form -->
+				</div>
 				
 				<footer class="footer">
 					<p>
