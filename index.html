@@ -149,21 +149,24 @@
 						</section>
 					</div>
 				
-				
-				<div id="subscribe">
-					<form class="form-inline">
-					  <div class="form-group">
-					    <label for="input-name">Name</label>
-					    <input type="text" class="form-control" id="input-name" placeholder="John Doe" required>
-					  </div>
-					  <div class="form-group">
-					    <label for="input-email" id="email-header">Email</label>
-					    <input type="email" class="form-control" id="input-email" placeholder="john.doe@example.com" required>
-					  </div>
-					  <button type="submit" class="btn btn-primary" id="subscribe-btn">Subscribe!</button>
-					</form>
+				<div class="row">
+					<section class="col-xs-12 col-md-10 col-md-push-1"id="subscribe">
+						<h1>
+							Subsribe to get the latest news!
+						</h1>
+						<form class="form-inline" role="form" action="subscribe.html" method="get">
+					  	<div class="form-group">
+					    	<label for="input-name">Name</label>
+					    	<input type="text" class="form-control" id="input-name" placeholder="First Last" required>
+					  	</div>
+					  	<div class="form-group">
+					    	<label for="input-email" id="email-header">Email</label>
+					    	<input type="email" class="form-control" id="input-email" placeholder="First.Last@example.com" required>
+					  	</div>
+					  	<button type="submit" class="btn btn-primary" id="subscribe-btn">Subscribe!</button>
+						</form>
+					</section>
 				</div>
-				
 				<footer class="footer">
 					<p>
 						Made by Kyle McWeeney in August 2016. Final Project in Intro to Javascript Course! Some content used from <a href="https://en.wikipedia.org/wiki/The_Walking_Dead_(TV_series)">The Walking Dead Wiki Page</a>
