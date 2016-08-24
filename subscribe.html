@@ -11,7 +11,7 @@
 		<title>The Walking Dead</title>
 		
 		<!-- User CSS file -->
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/subscribe.css">
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<!-- Jquery -->
@@ -20,16 +20,48 @@
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 	</head>
 	<body>
+		<div class="wrapper">
+			
+			<header>
+				<div class="container-fluid" id="header-image">
+					<!-- img-responsive for defferent device sizes -->
+					<img class=" img-responsive" src="http://i1.wp.com/jasonlightner.com/wp-content/uploads/2015/02/the-walking-dead-tv-logo-season-5-header.png?resize=1438%2C359">
+				</div>
+				<!-- fixed Nav bar under header photo -->
+				<nav class="navbar navbar-inverse" id="top-nav">
+					<div class="container-fluid">
+						<div class="navbar-header">
+    	    		<span class="sr-only">Toggle navigation</span>
+    	   	 		<span class="icon-bar"></span>
+    	    		<span class="icon-bar"></span>
+    	    		<span class="icon-bar"></span>
+						</div>
+						
+						<div class="navbar">
+							<ul class ="nav nav-bar nav" id="header-nav">
+								<li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#content3">Related Info</a></li>
+							</ul>
+						</div>
+					</div><!-- end header image div -->
+				</nav><!-- end navbar header -->
+			</header><!-- end header -->
 		
-		    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Thank You!</h1>
-        <p>You have successfully subscribed for news about The Walking Dead!</p>
-        <p><a class="btn btn-primary btn-lg" href="index.html" role="button">Return!</a></p>
-      </div>
-    </div>
-		
-		
+			<div id="main-content">
+		  	<!-- Main jumbotron for a primary marketing message or call to action -->
+    	  <div class="container" style="margin: 0; height: 100%;">
+					<div class="row" id="thanks-sub">
+						<section class="col-xs-12 col-md-6 col-md-push-3" id="sub-message">
+							<h1>Thank You!</h1>
+    	    		<p>You have successfully subscribed for news about The Walking Dead!</p>
+    	    		<p><a class="btn btn-primary btn-lg" href="index.html" role="button">Return!</a></p>
+						
+						</section>
+    	  	</div>
+    		</div><!-- end thanks-sub -->
+			
+			</div><!-- end main-content -->
+		</div><!-- end wrapper -->
 	</body>
 </html>
