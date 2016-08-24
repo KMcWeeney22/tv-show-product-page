@@ -1,0 +1,46 @@
+.wrapper{
+	height: 500px;
+}
+#main-content{
+	background-image: url("http://www.desktopimages.org/pictures/2013/1226/1/orig_156753.jpg");
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 100% 100%;
+  min-width: 100%;
+	min-height: 100% !important;
+  background-size: cover;
+}
+
+#thanks-sub{
+	margin: 0 auto;
+	hieght: 100%;
+	background-color: white;
+	opacity: .8;
+	width: 700px;
+	border-radius: 10px;
+	margin-top: 120px;
+	padding-bottom: 10px;
+}
+
+#header-nav li{
+	display: block;
+	float: left;
+}
+/* header ------------- */
+header{
+	padding: 0;
+}
+#header-image{
+	padding: 0;
+}
+#header-image img{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+#top-nav {
+	height: 30px;
+	padding: 0;
+	margin-bottom: 0;
+	border-radius: 0;
+}
