@@ -92,6 +92,8 @@
 
 	#twitter-api{
 		background-color: black;
+		height: 200px;
+		overflow: hidden;
 	}
 	.twitter-timeline{
 		width: 100%;
