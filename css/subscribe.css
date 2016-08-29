@@ -1,6 +1,7 @@
 .wrapper{
 	height: 500px;
 }
+/* smae background image and setup as index.html */
 #main-content{
 	background-image: url("http://www.desktopimages.org/pictures/2013/1226/1/orig_156753.jpg");
 	background-repeat: no-repeat;
@@ -10,7 +11,7 @@
 	min-height: 100% !important;
   background-size: cover;
 }
-
+/* position the thanks for subscribing message in middle of the page */
 #thanks-sub{
 	margin: 0 auto;
 	hieght: 100%;
